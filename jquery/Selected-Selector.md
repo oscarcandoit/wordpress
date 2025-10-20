@@ -1,0 +1,30 @@
+---
+url: https://api.jquery.com/selected-selector/
+scraped_at: 2025-10-20T03:29:58.533Z
+---
+
+## [jQuery API Documentation](https://jquery.com/ "jQuery API Documentation")
+
+Navigation
+
+## selected selector
+
+**Description:** Selects all elements that are selected.
+
+- #### version added: [1.0](https://api.jquery.com/category/version/1.0/)jQuery( ":selected" )
+
+
+The `:selected` selector works for `<option>` elements. It does not work for checkboxes or radio inputs; use `:checked` for them.
+
+### Additional Notes:
+
+- Because `:selected` is a jQuery extension and not part of the CSS specification, queries using `:selected` cannot take advantage of the performance boost provided by the native DOM `querySelectorAll()` method. To achieve the best performance when using `:selected` to select elements, first select the elements using a pure CSS selector, then use [`.filter(":selected")`](https://api.jquery.com/filter/).
+
+
+Attaches a change event to the select that gets the text for each selected option and writes them in the div. It then triggers the event for the initial text draw.
+
+|     |     |
+| --- | --- |
+| 1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>17<br>18<br>19<br>20<br>21<br>22<br>23<br>24<br>25<br>26<br>27<br>28<br>29<br>30<br>31<br>32<br>33<br>34<br>35<br>36<br>37<br>38 | ```<br>``` |
+
+#### Demo:
